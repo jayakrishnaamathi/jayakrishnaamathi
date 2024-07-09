@@ -1,0 +1,42 @@
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
+import tailwind from 'tailwind-rn';
+
+const Stack = createStackNavigator();
+
+function HomeScreen({ navigation }) {
+    return (
+        <View style={tailwind('flex-1 justify-center items-center')}>
+            <Text style={tailwind('text-3xl font-bold')}>Welcome to Learning Platform</Text>
+            <Button title="Mentor Registration" onPress={() => navigation.navigate('MentorRegistration')} />
+            <Button title="Learner Registration" onPress={() => navigation.navigate('LearnerRegistration')} />
+        </View>
+    );
+}
+
+function MentorRegistrationScreen() {
+    return (
+        <View style={tailwind('p-6')}>
+            <Text style={tailwind('text-2xl font-semibold mb-4')}>Register as a Mentor</Text>
+            <TextInput placeholder="Your name" style={tailwind('w-full p-2 border border-gray-300 rounded mb-4')} />
+            <TextInput placeholder="Your email" style={tailwind('w-full p-2 border border-gray-300 rounded mb-4')} />
+            <TextInput placeholder="Your bio" style={tailwind('w-full p-2 border border-gray-300 rounded mb-4')} multiline />
+            <Button title="Submit" onPress={() => {}} />
+        </View>
+    );
+}
+
+function LearnerRegistrationScreen() {
+    // Implement Google Sign-In here
+    return (
+        <View style={tailwind('p-6')}>
+            <Text style={tailwind('text-2xl font-semibold mb-4')}>Register as a Learner</Text>
+            {/* Google Sign-In Button */}
+        </View>
+    );
+}
+
+function App() {
+   

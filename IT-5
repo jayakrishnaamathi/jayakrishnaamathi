@@ -1,0 +1,21 @@
+import React from 'react';
+import { View, Text, TextInput, Button } from 'react-native';
+import tailwind from 'tailwind-rn';
+
+function ContactUsScreen({ navigation }) {
+    return (
+        <View style={tailwind('flex-1 items-center justify-center bg-gray-100')}>
+            <Text style={tailwind('text-4xl font-bold text-blue-600 mb-4')}>Contact Us</Text>
+            <TextInput placeholder="Your Name" style={tailwind('w-3/4 p-2 border border-gray-300 rounded mb-4')} />
+            <TextInput placeholder="Your Email" style={tailwind('w-3/4 p-2 border border-gray-300 rounded mb-4')} />
+            <TextInput placeholder="Your Message" style={tailwind('w-3/4 p-2 border border-gray-300 rounded mb-4')} multiline />
+            <Button title="Submit" onPress={() => {}} />
+            <Button title="Home" onPress={() => navigation.navigate('Home')} />
+            <Button title="About Us" onPress={() => navigation.navigate('AboutUs')} />
+            <Button title="Our Services" onPress={() => navigation.navigate('Services')} />
+            <Button title="Portfolio" onPress={() => navigation.navigate('Portfolio')} />
+        </View>
+    );
+}
+
+export default ContactUsScreen;

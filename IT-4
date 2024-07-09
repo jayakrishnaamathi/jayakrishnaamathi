@@ -1,0 +1,20 @@
+import React from 'react';
+import { View, Text, Button } from 'react-native';
+import tailwind from 'tailwind-rn';
+
+function PortfolioScreen({ navigation }) {
+    return (
+        <View style={tailwind('flex-1 items-center justify-center bg-gray-100')}>
+            <Text style={tailwind('text-4xl font-bold text-blue-600 mb-4')}>Our Portfolio</Text>
+            <Text style={tailwind('text-lg text-gray-700 mb-2')}>• Project 1: E-commerce Platform</Text>
+            <Text style={tailwind('text-lg text-gray-700 mb-2')}>• Project 2: Mobile Banking App</Text>
+            <Text style={tailwind('text-lg text-gray-700 mb-2')}>• Project 3: Healthcare Management System</Text>
+            <Button title="Home" onPress={() => navigation.navigate('Home')} />
+            <Button title="About Us" onPress={() => navigation.navigate('AboutUs')} />
+            <Button title="Our Services" onPress={() => navigation.navigate('Services')} />
+            <Button title="Contact Us" onPress={() => navigation.navigate('ContactUs')} />
+        </View>
+    );
+}
+
+export default PortfolioScreen;

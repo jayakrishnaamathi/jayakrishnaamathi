@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample React Native App</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-6">
+        <h1 class="text-3xl font-bold">My React Native App</h1>
+        <p class="text-xl">Built with React Native, Tailwind CSS, and Android Studio</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto p-6">
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+            <p class="text-gray-700">
+                This app is designed to provide a seamless user experience across both Android and iOS platforms. 
+                Utilizing React Native for cross-platform development, Tailwind CSS for styling, and Android Studio for 
+                native Android development, this app demonstrates modern mobile app development techniques.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold mb-4">Features</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Cross-platform compatibility</li>
+                <li>Responsive design with Tailwind CSS</li>
+                <li>Native Android components integrated via Android Studio</li>
+                <li>User-friendly interface</li>
+                <li>Fast performance</li>
+            </ul>
+        </section>
+
+        <!-- Screenshot Section -->
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="screenshot1.png" alt="Screenshot 1" class="rounded shadow-md">
+                <img src="screenshot2.png" alt="Screenshot 2" class="rounded shadow-md">
+                <img src="screenshot3.png" alt="Screenshot 3" class="rounded shadow-md">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
+            <form class="bg-white p-6 rounded shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 mb-2">Name</label>
+                    <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded" placeholder="Your name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" placeholder="Your email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" class="w-full p-2 border border-gray-300 rounded" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6 mt-8">
+        <p class="text-center">&copy; 2024 My React Native App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

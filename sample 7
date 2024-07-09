@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-6">
+        <h1 class="text-3xl font-bold">Admin Dashboard</h1>
+    </header>
+    <main class="container mx-auto p-6">
+        <section class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Mentor Verification</h2>
+            <table class="w-full table-auto">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Name</th>
+                        <th class="px-4 py-2">Email</th>
+                        <th class="px-4 py-2">Bio</th>
+                        <th class="px-4 py-2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example row -->
+                    <tr>
+                        <td class="border px-4 py-2">John Doe</td>
+                        <td class="border px-4 py-2">john.doe@example.com</td>
+                        <td class="border px-4 py-2">Experienced in Data Science</td>
+                        <td class="border px-4 py-2">
+                            <button class="bg-green-600 text-white py-1 px-2 rounded hover:bg-green-700">Accept</button>
+                            <button class="bg-red-600 text-white py-1 px-2 rounded hover:bg-red-700">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

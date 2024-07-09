@@ -1,0 +1,20 @@
+import React from 'react';
+import { View, Text, Button } from 'react-native';
+import tailwind from 'tailwind-rn';
+
+function AboutUsScreen({ navigation }) {
+    return (
+        <View style={tailwind('flex-1 items-center justify-center bg-gray-100')}>
+            <Text style={tailwind('text-4xl font-bold text-blue-600 mb-4')}>About Us</Text>
+            <Text style={tailwind('text-lg text-gray-700 mb-4')}>
+                We are a team of passionate tech experts providing top-notch IT solutions to help your business thrive.
+            </Text>
+            <Button title="Home" onPress={() => navigation.navigate('Home')} />
+            <Button title="Our Services" onPress={() => navigation.navigate('Services')} />
+            <Button title="Portfolio" onPress={() => navigation.navigate('Portfolio')} />
+            <Button title="Contact Us" onPress={() => navigation.navigate('ContactUs')} />
+        </View>
+    );
+}
+
+export default AboutUsScreen;

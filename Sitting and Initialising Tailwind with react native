@@ -1,0 +1,6 @@
+npm install tailwind-rn
+# or
+yarn add tailwind-rn
+
+
+npx tailwind-rn
